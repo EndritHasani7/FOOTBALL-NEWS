@@ -1,0 +1,370 @@
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.container h1 span {
+    color: var(--pink);
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 2.4em;
+    color: var(--dark-blue);
+}
+
+.section-title p {
+    font-size: 1.6em;
+    font-weight: 500;
+    color:var(--red);
+}
+
+
+
+/* HEADER */
+header, header .container {
+    height: 100px;
+    background-color: var(--lightpink);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 300px;
+}
+
+.logo img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+label,
+input {
+    display: none;
+}
+
+nav {
+    font-weight: 500;
+}
+
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 500;
+}
+
+nav a.active,
+nav a.active:hover {
+    color: var(--dark-blue);
+    opacity: 0.7;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+
+.submenu {
+    display: none;
+}
+
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+
+nav li {
+    margin: 0px 4px;
+    display: inline-block;
+    position: relative;
+}
+
+nav li a {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+
+nav li ul {
+    display: none;
+    
+    z-index: 2;
+    padding: 10px;
+    background-color: var(--lightpink);
+    border: 1px solid black;
+    border-radius: 6px;
+    position: absolute;
+    top: 40px;
+}
+
+
+nav li ul.leagues-submenu {
+    width: 170px;
+}
+
+nav li ul.staff-submenu {
+    width: 120px;
+}
+
+nav li ul li {
+    display: block;
+    margin: 8px 0px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+
+
+/* MAIN */
+main .container {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+}
+
+div.intro {
+    width: 50%;
+}
+
+div.intro h1 {
+    font-size: 2.8em;
+}
+
+div.intro p {
+    font-size: 1.3em;
+    float: inline-start;
+    margin-bottom: 10px;
+}
+
+div.intro div {
+    display: flex;
+}
+
+div.intro div a {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0px;
+    padding: 12px 18px;
+    display: inline-block;
+    border: 1px solid var(--dark-blue);
+    border-radius: 6px;
+}
+
+div.intro div a:hover {
+    background-color: var(--lightpink);
+    transition: all 0.3s 0.5s ease-in-out;
+    transform: scale(1.1, 1);
+}
+
+div.illustration {
+    width: 50%;
+}
+
+
+/* --LEAGUES-- */
+.section-league {
+    background-color: var(--lightpink2);
+}
+
+
+.leagues {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.leagues .card {
+    border: 1px solid var(--dark-blue);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 40px 40px;
+}
+
+.leagues .card h3 {
+    color: var(--dark-blue);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.leagues .card p {
+    color: var(--dark-blue);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.leagues .card iframe {
+    width: 400px;
+    height: 250px;
+}
+
+.card span {
+    color: var(--red);
+}
+
+.card a {
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid var(--dark-blue);
+    border-radius: 6px;
+    padding: 5px; 
+}
+
+.card a:hover {
+    background-color: var(--bg-light);
+}
+
+
+
+/* NEWS -- Lajmet */
+.section-news {
+    background-color: var(--bg-light2);
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+ .posts .post {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.post h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.post a {
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.post a:hover {
+    color: var(--red);
+    background-color: var(--lightpink);
+}
+
+
+/* STAFF */
+.journalists {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.journalists .member {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.member img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.member h3 {
+    text-align: center;
+}
+
+.member p {
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.member ul {
+    list-style-type: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.member li{
+   margin: 0px 10px;
+   font-size: 1.8em;
+}
+
+
+/* STATS */
+.stats {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stats div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats strong {
+    font-size: 2.5em;
+}
+
+.stats span {
+    font-size: 1em;
+    
+}
+
+
+/* FOOTER */
+footer .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 1fr;
+    
+}
+
+footer img {
+    width: 250px;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+footer p {
+    color: var(--dark-blue);
+    margin-right: 150px;
+    }
+
+footer h3 {
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin: 7px;
+}

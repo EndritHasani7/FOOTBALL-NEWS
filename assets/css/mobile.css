@@ -1,0 +1,106 @@
+/* -----------MOBILE------------- */
+@media screen and (max-width: 765px)
+{
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+label i {
+    font-size: 1.5em;
+}
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+label,
+input {
+    display: block;
+}
+
+.toggle-menu:checked+nav{
+    display: block;
+}
+
+.toggle-menu:not(:checked)~nav {
+    display: none;
+}
+
+
+nav {
+    /* display: none; */
+    background-color: #E7C0FF;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+nav, nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    display: block;
+}
+
+.leagues, 
+footer .container,
+.stats,
+.journalists,
+.posts {
+    grid-template-columns: 1fr; 
+}
+
+.menu-icon {
+    display: block;
+    font-size: 2em;
+    color: var(#6296b7);
+}
+
+main {
+    padding: 80px 0px;
+}
+
+main .container {
+    height: auto;
+}
+
+body, html { overflow-x:hidden; }
+
+div.intro {
+    width: 100%;
+}
+
+div.intro h1{
+    font-size: 2em;
+}
+
+div.intro p{
+    font-size: 1em;
+}
+
+div.illustration {
+    display: none;
+}
+
+.section-title h2 {
+    font-size: 1.8em;
+}
+
+.section-title p {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.stats div {
+    height: 120px;
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+}
