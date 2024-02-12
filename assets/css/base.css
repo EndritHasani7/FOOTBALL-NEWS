@@ -4,15 +4,14 @@
 :root {
     --blue: #6296b7;
     --dark-blue: #03085e;
-    --bg-light: #77D4FC;
+    --bg-color: #77D4FC;
     --pink: #d55c91;
     --red: #cc0000;
     --lightpink: #E7C0FF;
     --black: #00000000;
     --lightpink2: #e3d5ed;
-    --bg-light2: #89bbd1;
+    --bg-color2: #89bbd1;
 }
-
 
 * {
     padding: 0px;
